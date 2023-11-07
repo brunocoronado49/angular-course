@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { GifsModule } from './gifs/gifs.module';
+import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
-import { CounterModule } from './counter/counter.module';
-import { HeroesModule } from './heroes/heroes.module';
-import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    CounterModule,
-    HeroesModule,
-    DbzModule
+    GifsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
